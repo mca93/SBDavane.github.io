@@ -209,7 +209,7 @@
                                 </div>
                                 <div class="panel-body">
                                     <div class="table-responsive">
-                                        <table class="table">
+                                        <table class="table" id="pacientes_table">
                                             <thead>
                                                 <tr>
                                                     <th>Ordem</th>
@@ -220,50 +220,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Teste 1</td>
-                                                    <td>Teste 2</td>
-                                                    <td>31/12/2019</td>
-                                                    <td>
-                                                        <button type="button" class="btn btn-default btn-rounded">Remarcar</button>
-                                                        <button type="button" class="btn btn-danger btn-rounded">Cancelar</button>
-                                                        <button type="button" class="btn btn-success btn-rounded">Atender</button>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                        <th scope="row">1</th>
-                                                        <td>Teste 1</td>
-                                                        <td>Teste 2</td>
-                                                        <td>31/12/2019</td>
-                                                        <td>
-                                                            <button type="button" class="btn btn-default btn-rounded">Remarcar</button>
-                                                            <button type="button" class="btn btn-danger btn-rounded">Cancelar</button>
-                                                            <button type="button" class="btn btn-success btn-rounded">Atender</button>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                            <th scope="row">1</th>
-                                                            <td>Teste 1</td>
-                                                            <td>Teste 2</td>
-                                                            <td>31/12/2019</td>
-                                                            <td>
-                                                                <button type="button" class="btn btn-default btn-rounded">Remarcar</button>
-                                                                <button type="button" class="btn btn-danger btn-rounded">Cancelar</button>
-                                                                <button type="button" class="btn btn-success btn-rounded">Atender</button>
-                                                            </td>
-                                                        </tr>
-                                                        <tr>
-                                                                <th scope="row">1</th>
-                                                                <td>Teste 1</td>
-                                                                <td>Teste 2</td>
-                                                                <td>31/12/2019</td>
-                                                                <td>
-                                                                    <button type="button" class="btn btn-default btn-rounded">Remarcar</button>
-                                                                    <button type="button" class="btn btn-danger btn-rounded">Cancelar</button>
-                                                                    <button type="button" class="btn btn-success btn-rounded">Atender</button>
-                                                                </td>
-                                                            </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -456,6 +413,15 @@
         <script src="assets/plugins/chartjs/chart.min.js"></script>
         <script src="assets/js/space.min.js"></script>
         <script src="assets/js/pages/dashboard.js"></script>
+        <script src="chamadas-da-api/geral.js"></script>
+        <script src="chamadas-da-api/operacoes.js"></script>
+        <script>
+          $( document ).ready(function() {
+              console.log( "ready!" );
+
+              pacientes();
+          });
+        </script>
     </body>
     <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
