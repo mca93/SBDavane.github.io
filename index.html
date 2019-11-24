@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <!-- Mirrored from phantom-themes.com/space/theme/templates/admin2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Nov 2019 11:55:35 GMT -->
 <head>
         <meta charset="utf-8">
@@ -10,7 +10,7 @@
         <meta name="keywords" content="admin,dashboard">
         <meta name="author" content="stacks">
         <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        
+
         <!-- Title -->
         <title>Space - Responsive Admin Dashboard Template</title>
 
@@ -21,8 +21,8 @@
         <link href="assets/plugins/icomoon/style.css" rel="stylesheet">
         <link href="assets/plugins/uniform/css/default.css" rel="stylesheet"/>
         <link href="assets/plugins/switchery/switchery.min.css" rel="stylesheet"/>
-        <link href="assets/plugins/nvd3/nv.d3.min.css" rel="stylesheet">  
-      
+        <link href="assets/plugins/nvd3/nv.d3.min.css" rel="stylesheet">
+
         <!-- Theme Styles -->
         <link href="assets/css/space.min.css" rel="stylesheet">
         <link href="assets/css/themes/admin2.css" rel="stylesheet">
@@ -36,7 +36,7 @@
         <![endif]-->
     </head>
     <body>
-        
+
         <!-- Page Container -->
         <div class="page-container">
             <!-- Page Sidebar -->
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div><!-- /Page Sidebar -->
-            
+
             <!-- Page Content -->
             <div class="page-content">
                 <!-- Page Header -->
@@ -85,9 +85,9 @@
                                     <i class="fa fa-angle-down"></i>
                                 </button>
                             </div>
-                        
+
                             <!-- Collect the nav links, forms, and other content for toggling -->
-                        
+
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
                                     <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>
@@ -192,7 +192,7 @@
                                     </div>
                                 </div>
                             </div>
-                           
+
                         </div><!-- Row -->
                     <div class="row">
                         <div class="col-lg-4 col-md-offset-10">
@@ -437,8 +437,8 @@
                 </div>
             </div><!-- /Page Content -->
         </div><!-- /Page Container -->
-        
-        
+
+
         <!-- Javascripts -->
         <script src="assets/plugins/jquery/jquery-3.1.0.min.js"></script>
         <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -462,18 +462,77 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myLargeModalLabel">Modal title</h4>
+                        <h4 class="modal-title" id="myLargeModalLabel">Marcacao de Exame</h4>
                     </div>
                     <div class="modal-body">
-                        <h4>Lorem Ipsum</h4>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br><br><hr>
-                        <h4>Dolor sit amet</h4>
-                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br><br><hr>
-                        <h4>Consectetuer</h4>
-                        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.<br><br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                      <!--Formulario aqui-->
+
+                      <form class="form-horizontal">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-rounded" class="col-sm-2 control-label">Nome</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control input-rounded" id="input-rounded">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-rounded" class="col-sm-2 control-label">NID</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control input-rounded" id="input-rounded">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-rounded" class="col-sm-2 control-label">contacto</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control input-rounded" id="input-rounded">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-rounded" class="col-sm-2 control-label">Genero</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control input-rounded" id="input-rounded">
+                                      <option value="M">Masculino</option>
+                                      <option value="F">Feminino</option>
+                                    </select>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-rounded" class="col-sm-2 control-label">Data da real</label>
+                                <div class="col-sm-10">
+                                    <input type="date" class="form-control input-rounded" id="input-rounded">
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="input-rounded" class="col-sm-2 control-label">Categoria</label>
+                                <div class="col-sm-10">
+                                    <select class="form-control input-rounded" id="exame-category">
+                                      <option value="Imagem">Imagem</option>
+                                      <option value="Sangue">Sangue</option>
+                                    </select>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                    </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success" data-dismiss="modal">Marcar</button>
                     </div>
                 </div>
             </div>
